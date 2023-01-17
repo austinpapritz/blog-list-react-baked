@@ -1,10 +1,10 @@
 import '../../services/blog.js';
 import BlogCard from '../BlogCard/BlogCard.js';
 
-import { blogsData } from '../../hooks/blogHook.js';
+import { useBlogs } from '../../hooks/useBlogs.js';
 
 export default function Main() {
-  const blogs = blogsData();
+  const blogs = useBlogs();
 
   return (
     <>

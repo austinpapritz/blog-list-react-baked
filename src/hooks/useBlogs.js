@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchBlogs } from '../services/blog.js';
 
-export function blogsData() {
+export function useBlogs() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
